@@ -23,8 +23,10 @@ CihuyDomReady(() => {
     .then((data) => {
         if (data && Array.isArray(data.data)) {
             let tableData = "";
+            let uniqueEntries = new Set();
             data.data.forEach((item, index) => {
-                if (item.Nama_Mk_Ind && item.Kode_Mk) {
+                const key = item.Nama_Mk_Ind + item.Kode_Mk;
+                if (!uniqueEntries.has(key)) {
                     tableData += `
                         <div class="col-md-4">
                             <div class="card">
@@ -35,6 +37,7 @@ CihuyDomReady(() => {
                             </div>
                         </div>
                     `;
+                    uniqueEntries.add(key); // Add the key to the set
                 }
             });
             tablebody.innerHTML = tableData;
