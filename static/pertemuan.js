@@ -34,7 +34,7 @@ CihuyDomReady(() => {
                             <div class="card-body">
                             <h5 class="card-title">Pertemuan ${item.Pertemuan_ke}</h5>
                             <p class="card-text">${item.PokokBahasan}</p>
-                            <a href="./update_rps.html?pertemuan=${item.Pertemuan_ke}" class="btn btn-primary" id="proyek${item.Pertemuan_ke}Btn">Update RPS</a>
+                            <a href="./update_rps.html?mk=${kodeMK}&pertemuan=${item.Pertemuan_ke}" class="btn btn-primary" id="proyek${item.Pertemuan_ke}Btn">Update RPS</a>
                             </div>
                         </div>
                     </div>
