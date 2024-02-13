@@ -32,7 +32,7 @@ CihuyDomReady(() => {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">${item.Nama_Mk_Ind}</h5>
-                                    <a href="rp.html?mk=${item.Kode_Mk}" class="btn btn-primary" id="proyek${index + 1}Btn">Update RPS</a>
+                                    <a href="pertemuan.html?mk=${item.Kode_Mk}" class="btn btn-primary" id="proyek${index + 1}Btn">Update RPS</a>
                                 </div>
                             </div>
                         </div>
